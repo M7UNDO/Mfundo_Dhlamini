@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mfundo Dhlamini" />
+    <meta
+      name="description"
+      content="Explore A collection of Mfundo Dhlamini's projects, ranging from web developmet to game design and 3d modeling"
+    />
+    <meta property="og:title" content="Mfundo's Workshop - Game Dev, Design & Code" />
+    <meta
+      property="og:description"
+      content="Welcome to the island of relevancy explore the work of Mfundo, a digital artist, game developer, web developer and creative thinker."
+    />
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <script src="https://kit.fontawesome.com/a977cb27e6.js" crossorigin="anonymous" defer></script>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <header>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span class="menu-lines"></span>
+      </button>
+      <nav class="nav-container">
+        <div class="nav-logo">
+          <a href="">M7UNDO</a>
+        </div>
+
+        <div class="nav-menu">
+          <ul class="navlinks">
+            <li><a href="">Home</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Essays</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Design</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+        </div>
+        <div class="socials-container">
+          <a class="sm instagram" href="" target="_blanks"><i class="fa-brands fa-instagram"></i></a>
+          <a class="sm linkedin" href="" target="_blanks"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <div class="hero-graphic"></div>
+        <div class="hero-content">
+          <div class="home-title">
+            <h1 id="heading-intro">Welcome to <span class="heading-intro">Mfundo's Workshop</span></h1>
+            <p class="subheading">Unleashing creativity through code, design and play</p>
+          </div>
+          <a href="portfolio/index.html" class="cta-btn">Explore My Portfolio</a>
+        </div>
+      </section>
+      <section class="index-category">
+        <h2>Collection</h2>
+        <div class="index">
+          <a href="blogs/index.html" class="category-box">
+            <div class="dark-overlay"></div>
+            <h3>Blogs</h3>
+          </a>
+          <a href="essays/index.html" class="category-box">
+            <div class="dark-overlay"></div>
+            <h3>Essays</h3>
+          </a>
+          <a href="portfolio/index.html" class="category-box">
+            <div class="dark-overlay"></div>
+            <h3>Portfolio</h3>
+          </a>
+          <a href="designs/index.html" class="category-box">
+            <div class="dark-overlay"></div>
+            <h3>Design Process</h3>
+          </a>
+        </div>
+      </section>
+      <section class="quote-section">
+        <div class="quote-generator">
+          <h2>Need a Little Inspiration?</h2>
+          <p id="quote">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem unde quibusdam quia ex asperiores
+            consectetur quis maxime corporis suscipit expedita.
+          </p>
+          <p id="author">Author</p>
+          <button class="generate-quote-btn" onclick="getQuote(api_url)">Reveal Wisdom</button>
+        </div>
+      </section>
+    </main>
+    <footer>&copy;2025 Mfundo Dhlamini. All Rights Reserved</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
