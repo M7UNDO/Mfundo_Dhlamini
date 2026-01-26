@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mfundo Dhlamini" />
+    <meta
+      name="description"
+      content="Explore A collection of Mfundo Dhlamini's projects, ranging from web developmet to game design and 3d modeling"
+    />
+    <meta property="og:title" content="Mfundo's Workshop - Game Dev, Design & Code" />
+    <meta
+      property="og:description"
+      content="Welcome to the island of relevancy explore the work of Mfundo, a digital artist, game developer, web developer and creative thinker."
+    />
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/cera-round-pro-demo" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="https://kit.fontawesome.com/a977cb27e6.js" crossorigin="anonymous" defer></script>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="loader">
+      <svg class="loader-svg" viewBox="0 0 120 120">
+        <circle class="bg-circle" cx="60" cy="60" r="50" stroke-width="8" fill="none" />
+        <circle class="progress-circle" cx="60" cy="60" r="50" stroke-width="8" fill="none" />
+        <text class="loader-text" x="50%" y="50%" text-anchor="middle" dy=".3em">0%</text>
+      </svg>
+    </div>
+    <header></header>
+    <main>
+        <div id="ModalScreen" class="modal" onclick="closeModal()">
+
+        <span class="close" onclick="closeModal()"><i class="fi fi-bs-cross-small"></i></span>
+
+        <img class="modal-content" id="img01"/>
+
+        <div id="caption"></div>
+      </div>
+
+      <article class="design-container">
+        <div class="heading">
+          <h1 id="heading-intro">My Design Process</h1>
+          <p class="subheading">Take a look behind-the-scenes of my web developement process</p>
+        </div>
+
+        <div class="design-content">
+          <h2 id="IxD">IxD Process</h2>
+
+          <h3>Goal Alignment</h3>
+          <p>
+            The goal of my website is to effectively showcase my work while building a strong personal brand. To achieve
+            this, I will use a clean, minimalist layout that highlights my portfolio through visuals and concise
+            descriptions that are organised into distinct categories. Consistent typography and colour schemes will
+            reinforce a professional identity, while the About page will offer insight into my background, skills, and
+            experience. Easy navigation and a responsive design will ensure visitors can seamlessly explore the content
+            across all devices. Additionally, the blog and design process sections will provide a window into my
+            creative and technical thinking, helping users understand how I approach projects. Finally, the site will
+            encourage collaboration and future opportunities by including a contact section and links to my social
+            profiles, fostering engagement with potential employers, collaborators, and fellow creatives.
+          </p>
+          <h3>My target audience:</h3>
+          <p>
+            The target audience for my site includes three key groups. Firstly, potential employers, who are on the
+            website to engage with my past projects and learn about me in order to consider me for professional
+            positions. Second my peers, fellow developers and people within the industry who may be viewing my work for
+            the purpose of potential collaborations or networking opportunities. Lastly users who might be visiting my
+            website seeking some inspiration into my design process.
+          </p>
+          <h3>My content:</h3>
+          <ul class="design-list">
+            <li>
+              My home page will serve as the landing page, welcoming users and providing them with a brief introduction
+              of who I am and guiding them to different sections of my website.
+            </li>
+            <li>My blog page will feature a collection of my weekly blogs.</li>
+            <li>My essay page will focus on more academic writing and themes.</li>
+            <li>
+              My portfolio page will be the centrepiece of my website, showcasing my game development projects and
+              artwork. Users can click on a link to play my games and interact directly with my work.
+            </li>
+            <li>
+              My design page provides a behind-the-scenes look at my web development process, allowing users to see the
+              steps I took in planning and building up my website from day one.
+            </li>
+            <li>
+              My about page will give user insight into who I am, my skills and experience, offering a comprehensive
+              overview into professional background and my expertise. It will also include where I am based and how they
+              can get in touch with me.
+            </li>
+          </ul>
+
+          <h2 id="UserFlow">Information Structure & User Flow</h2>
+          <div class="flow-diagrams">
+            <figure>
+              <img id="infoImg" class="user-diagrams" src="images/Information Structure.png" alt="Diagram of the website's Information Structure"/>
+              <figcaption>A diagram of the information structure</figcaption>
+            </figure>
+
+            <figure>
+              <img id="flowImg" class="user-diagrams" src="images/userflow diagram.png" alt="Flow Diagram of the website's envisoned User Flow"/>
+              <figcaption>A diagram of my user flow</figcaption>
+            </figure>
+          </div>
+
+          <h3>Reference Material</h3>
+          <div class="design-reference">
+            <figure>
+              <a href="https://chriskalafatis.com/" target="_blank"
+                ><img class="reference-site" src="images/ChrisK's Website.png" alt="Chris Kalafatis Website"
+              /></a>
+              <a href="https://chriskalafatis.com/" target="_blank"
+                ><img class="reference-site" src="images/ChrisK's website2.png" alt="Chris Kalafatis Website"
+              /></a>
+              <figcaption>Images from Chris Kalafatis's website</figcaption>
+            </figure>
+          </div>
+
+          <div class="likes-dislikes">
+            <h3>Likes & Dislikes</h3>
+            <h4>Likes</h4>
+            <ul class="design-list">
+              <li>
+                The design of the website is sleek and futuristic. The black and white colour palette and the bold
+                typography give the site a modern look and feel.
+              </li>
+              <li>
+                The use of bold typography on different headings helps the website achieve its strong visual hierarchy.
+                This contributes to its easy navigation.
+              </li>
+              <li>
+                The design of the website is very clean and minimalist. It does a good job of avoiding clutter, allowing
+                the content to stand out.
+              </li>
+              <li>
+                The way in which the designers' skillset has been displayed on the website effectively outlines their
+                range of skills and projects and showcases the designers' versatility. I think this is a good idea and
+                could attract potential employers.
+              </li>
+              <li>
+                The way the website makes use of creative typography, such as the fragmented text. This adds an artistic
+                touch to the design.
+              </li>
+            </ul>
+
+            <h4>Dislikes</h4>
+            <ul class="design-list">
+              <li>
+                The website's design relies heavily on text; there is a lack of imagery. For the design of my website, I
+                intend to use more images and icons. In this case, however, it does not take away from the website's
+                appeal and impact.
+              </li>
+
+              <li>
+                The website's design makes use of a limited colour palette. Although the minimalism is a positive for
+                this website. Adding some spots of colour could potentially make the website more engaging.
+              </li>
+            </ul>
+          </div>
+
+          <h3 id="WebsiteReferences">Some other websites that I drew inspiration from</h3>
+          <ul class="design-list" id="inspiration">
+            <li>
+              <a href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2549309/" target="_blank"
+                >Aaminah</a
+              >
+            </li>
+            <li><a href="https://www.wix.com/explore/websites/site/ayelet-raziel" target="_blank">ayelet-raziel</a></li>
+            <li><a href="https://farzinzaman.webflow.io/" target="_blank">farzinzaman</a></li>
+          </ul>
+        </div>
+
+        <div class="design-content">
+          <h2 id="StyleGuide">Style Guide</h2>
+
+          <h3>Colour Scheme:</h3>
+
+          <div class="colour-palettes">
+            <figure class="pallete-container">
+              <h4>Primary Pallete</h4>
+              <img class="pallete" src="images/Colour_Palette 1.png" alt="Colour Palette 2" />
+              <figcaption>
+                <p>Colours: Dark forest green, Soft cream white, Pure black, Muted sage green, calm and natural</p>
+                <p></p>
+              </figcaption>
+            </figure>
+
+            <figure class="pallete-container">
+              <h4>Secondary Palette</h4>
+              <img class="pallete" src="images/Colour_Palette 2.png" alt="Colour Palette 3" />
+              <figcaption>
+                <p>Colours: Deep navy blue, Soft gray, Warm off-white, Muted warm gray</p>
+              </figcaption>
+            </figure>
+
+            <figure class="pallete-container">
+              <h4>Neutral Palette</h4>
+              <img class="pallete" src="images/Colour_Palette 3.png" alt="Colour Palette 1" />
+              <figcaption>
+                <p>Colours: Dark charcoal gray, Warm taupe brown, Warm off-white, Neutral gray</p>
+                <p></p>
+              </figcaption>
+            </figure>
+
+            <figure class="pallete-container updated-palette">
+              <h4>Primary Palette (Updated)</h4>
+              <img
+                class="pallete"
+                src="images/Final Colour Palette.png"
+                alt="Three circular swatches showing a dark navy 
+              (#19102D), a vibrant blue (#3F5EFB), and a soft white (#F5F5F5) representing a modern web design color palette 
+              with strong contrast and a bold accent."
+              />
+              <figcaption>
+                <p>Colours:Deep navy (primary), Soft white (primary), Vibrant blue (accent)</p>
+                <p></p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <ul class="design-list">
+            <li>
+              Primary Palette: This palette has a natural and earthy vibe, combining deep greens and soft neutrals for a
+              grounded, organic look.
+            </li>
+            <li>
+              Secondary Palette: This palette leans towards a muted, classic look with calming shades and a
+              sophisticated vibe.
+            </li>
+            <li>
+              Neutral Palette:This palette has a more balanced and modern feel with a mix of warm and cool tones. It
+              would be idealfor the minimalist and contemporary design I am going for.
+            </li>
+            <li>
+              Updated Primary Palette:A clean, modern palette with deep navy and soft white as primaries, accented by a
+              bold, vibrant bluefor emphasis.
+            </li>
+          </ul>
+        </div>
+
+        <div class="design-content">
+          <h3>Typography</h3>
+          <p>
+            I want the typography of my website to have a clean and modern feel. I think this is reflected by my font
+            choices below, which are Montserrat, which has a sleek geometric design, which gives it a contemporary look,
+            which would be ideal for my heading and the body of my text. The modern aesthetic of the font is created by
+            its balanced letterforms and its versatility, which also maintains a professional look, while Khand has a
+            contemporary touch because of its use of clean lines and subtle characters that enhance the modern feel
+            without compromising the user's readability. I think using either of these fonts or a combination of both
+            will ensure that my website feels aesthetically pleasing and easy to read.
+          </p>
+
+          <h3>Initial Font Choices</h3>
+          <div class="font-holder">
+            <figure class="font-container">
+              <img
+                class="font-choices"
+                src="images/Khand Font.png"
+                alt="Sample text displayed in Khand font, a compact, angular sans-serif typeface"
+              />
+              <figcaption>Khand (sans-serif) font</figcaption>
+            </figure>
+
+            <figure class="font-container">
+              <img
+                class="font-choices"
+                src="images/Montserrat Font.png"
+                alt="Sample text displayed in Montserrat font, a modern sans-serif typeface"
+              />
+              <figcaption>Montserrat (sans-serif)</figcaption>
+            </figure>
+          </div>
+
+          <h3>Updated Font Choices</h3>
+          <div class="font-holder">
+            <figure class="font-container">
+              <img
+                src="images/Santoshi_Font.png"
+                class="font-choices"
+                alt="Sample text displayed in Santoshi font, a clean and minimal sans-serif typeface designed for readability"
+              />
+              <figcaption>
+                Santoshi(sans-serif) applied to body text and all heading levels (h1 to h5), ensuring readability and
+                visual consistency.
+              </figcaption>
+            </figure>
+
+            <figure class="font-container">
+              <img
+                src="images/Montserrat Font.png"
+                class="font-choices"
+                alt="Sample text displayed in Montserrat font, a modern sans-serif typeface"
+              />
+              <figcaption>
+                Montserrat(sans-serif) used for main headings (h1) and paragraph text, offering a modern and clean look.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="design-content">
+          <h2 class="h2-intial" id="Wireframes">Wireframes</h2>
+          <h3>Rough Wireframes</h3>
+          <div class="initial-wireframe-container">
+            <figure class="initial-wireframe fade" id="in-wireframe-1">
+              <img class="first-wireframe" src="images/homepage.png" alt="Home page wireframe" />
+              <div class="numbertext">1 / 5</div>
+              <figcaption>
+                <span class="page-name">Home Page:</span>
+                The title on my home page welcomes users to my site, while the subheading provides a brief description
+                of its purpose, along with a catchy line that engages visitors and encourages them to explore further.
+                The navigation panel is positioned in the top right corner for easy access, following a common web
+                convention. This menu remains consistent across all pages. My name appears in the top left corner to
+                establish my identity and help visitors remember me. Below the subheading, a central navigation menu
+                features images and descriptions that guide users through the site.
+              </figcaption>
+            </figure>
+
+            <figure class="initial-wireframe fade">
+              <img class="first-wireframe" src="images/aboutpage.png" alt="About Page Wireframe" />
+              <div class="numbertext">2 / 5</div>
+              <figcaption>
+                <span class="page-name">About Page:</span>
+                The About Me page introduces me with a bold heading, a short bio tagline, and a profile image. Below
+                this, the main content area provides a comprehensive overview of my professional background.
+              </figcaption>
+            </figure>
+
+            <figure class="initial-wireframe fade">
+              <img class="first-wireframe" src="images/blogpage.png" alt="Blog Page" />
+              <div class="numbertext">3 / 5</div>
+              <figcaption>
+                <span class="page-name">Blog Page:</span>
+                The layout of my blog page includes a title at the top labeled “Blogs.” Below it are interactive blocks,
+                each representing an individual blog post. These blocks contain the blog title, a brief introduction,
+                and additional descriptive text. On the left side of the page, there is a quick-access blog menu
+                arranged in numerical order. This menu does not include titles or introductions, allowing users to
+                quickly navigate through the content.
+              </figcaption>
+            </figure>
+
+            <figure class="initial-wireframe fade">
+              <img class="first-wireframe" src="images/portfoliopage.png" alt="Portfolio Page" />
+              <div class="numbertext">4 / 5</div>
+              <figcaption>
+                <span class="page-name">Portfolio Page:</span>
+                The layout of my portfolio page is engaging and inspired by how games are showcased on app stores. Each
+                project is presented with an image on the left and the title and description on the right. A scroll bar
+                on the right allows users to browse through the list of projects.
+              </figcaption>
+            </figure>
+
+            <figure class="initial-wireframe fade">
+              <img class="first-wireframe" src="images/designpage.png" alt="Design Page" />
+              <div class="numbertext">5 / 5</div>
+              <figcaption>
+                <span class="page-name">Design Page:</span>
+                The layout of my design page features a title centred at the page, followed by headings and text boxes
+                that answer or unpack key questions and considerations throughout my design process.
+              </figcaption>
+            </figure>
+
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+          </div>
+          <div class="three-dots">
+            <span class="dot" onclick="currentSlide(1, 0)"></span>
+            <span class="dot" onclick="currentSlide(2, 0)"></span>
+            <span class="dot" onclick="currentSlide(3, 0)"></span>
+            <span class="dot" onclick="currentSlide(4, 0)"></span>
+            <span class="dot" onclick="currentSlide(5, 0)"></span>
+          </div>
+
+          <h3>Visualisation of composition and interace elements:</h3>
+          <div class="design-elements">
+            <figure class="design-elements-box fade" id="fin-wireframe-1">
+              <img class="final-wireframe" src="images/Home Page Visualise.png" alt="Wireframe of home page" />
+              <div class="numbertext">1 / 5</div>
+              <figcaption class="visual-element-diagram">Wireframe of the home page</figcaption>
+            </figure>
+
+            <figure class="design-elements-box fade">
+              <img class="final-wireframe" src="images/Blog Page Visualise.png" alt="Wireframe of blog page" />
+              <div class="numbertext">2 / 5</div>
+              <figcaption class="visual-element-diagram">Wireframe of the blog page</figcaption>
+            </figure>
+
+            <figure class="design-elements-box fade">
+              <img class="final-wireframe" src="images/Portfolio Page Visualise.png" alt="Wireframe of portfolio page" />
+              <div class="numbertext">3 / 5</div>
+              <figcaption class="visual-element-diagram">Wireframe of the portfolio page</figcaption>
+            </figure>
+
+            <figure class="design-elements-box fade">
+              <img class="final-wireframe" src="images/Essay Page Visualise.png" alt="Wireframe of essay page" />
+              <div class="numbertext">4 / 5</div>
+              <figcaption class="visual-element-diagram">Wireframe of the essay page</figcaption>
+            </figure>
+
+            <figure class="design-elements-box fade">
+              <img class="final-wireframe" src="images/About Page Visualise.png" alt="Wireframe of home page" />
+              <div class="numbertext">5 / 5</div>
+              <figcaption class="visual-element-diagram">Wireframe of the about page</figcaption>
+            </figure>
+
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+          </div>
+
+          <div class="three-dots">
+            <span class="dots" onclick="currentSlide(1, 1)"></span>
+            <span class="dots" onclick="currentSlide(2, 1)"></span>
+            <span class="dots" onclick="currentSlide(3, 1)"></span>
+            <span class="dots" onclick="currentSlide(4, 1)"></span>
+            <span class="dots" onclick="currentSlide(5, 1)"></span>
+          </div>
+        </div>
+
+        <h3>Updated Wireframes</h3>
+          <div class="updated-wireframe-holder">
+            <figure class="updated-wireframe-container fade" id="updated-wireframe-1">
+              <img class="updated-wireframe" src="images/home page final.png" alt="Wireframe of updated home page" />
+              <div class="numbertext">1 / 7</div>
+              <figcaption class="visual-element-diagram">Wireframe of updated home page</figcaption>
+            </figure>
+
+            <figure class="updated-wireframe-container fade">
+              <img class="updated-wireframe" src="images/home page final (2).png" alt="Wireframe showing the bottom of the updated home page" />
+              <div class="numbertext">2 / 7</div>
+              <figcaption class="visual-element-diagram">Wireframe showing the bottom of the updated home page</figcaption>
+            </figure>
+
+            <figure class="updated-wireframe-container fade">
+              <img class="updated-wireframe" src="images/blog page final.png" alt="Wireframe of updated blog page" />
+              <div class="numbertext">3 / 7</div>
+              <figcaption class="visual-element-diagram">Wireframe of updated blog page</figcaption>
+            </figure>
+
+            <figure class="updated-wireframe-container fade">
+              <img class="updated-wireframe" src="images/portfolio page final.png" alt="Wireframe of updated portfolio page" />
+              <div class="numbertext">4 / 7</div>
+              <figcaption class="visual-element-diagram">Wireframe of updated portfolio page</figcaption>
+            </figure>
+
+            <figure class="updated-wireframe-container fade">
+              <img class="updated-wireframe" src="images/essay page final.png" alt="Wireframe of updated essay page" />
+              <div class="numbertext">5 / 7</div>
+              <figcaption class="visual-element-diagram">Wireframe of updated essay page</figcaption>
+            </figure>
+
+            <figure class="updated-wireframe-container fade">
+              <img class="updated-wireframe" src="images/design page final.png" alt="Wireframe of updated design page" />
+              <div class="numbertext">6 / 7</div>
+              <figcaption class="visual-element-diagram">Wireframe of updated design page</figcaption>
+            </figure>
+
+            <figure class="updated-wireframe-container fade">
+              <img class="updated-wireframe" src="images/about  page final.png" alt="Wireframe of updated about page" />
+              <div class="numbertext">7 / 7</div>
+              <figcaption class="visual-element-diagram">Wireframe of updated about page</figcaption>
+            </figure>
+
+            <a class="prv" onclick="plusSlides(-1, 2)">&#10094;</a>
+            <a class="nxt" onclick="plusSlides(1, 2)">&#10095;</a>
+          </div>
+
+          <div class="three-dots">
+            <span class="dott" onclick="currentSlide(1, 2)"></span>
+            <span class="dott" onclick="currentSlide(2, 2)"></span>
+            <span class="dott" onclick="currentSlide(3, 2)"></span>
+            <span class="dott" onclick="currentSlide(4, 2)"></span>
+            <span class="dott" onclick="currentSlide(5, 2)"></span>
+            <span class="dott" onclick="currentSlide(6, 2)"></span>
+            <span class="dott" onclick="currentSlide(7, 2)"></span>
+          </div>
+        </div>
+
+        <div class="design-content">
+          <h2 id="website-evaluation">Evaluating potential websites my Essay 1: UX & UI Analysis.</h2>
+
+          <div class="website-example">
+            <h3 class="website-name">GCRA website- Pros & Cons</h3>
+            <a href="https://gcrabursary.gauteng.gov.za/"
+              ><img class="web-image" src="images/GCRA.png" alt="GCRA website"
+            /></a>
+          </div>
+
+          <h4>Pros</h4>
+          <ul class="design-list">
+            <li>
+              The website has a clear purpose. The landing page immediately displays the current status of applications,
+              whether they are open or closed. Since applications are closed in this case, they have removed the CTA
+              button “Apply Now," whereas some bursary websites allow you to click an "Apply" button only to then inform
+              you that the bursary is closed.
+            </li>
+            <li>
+              The website works just as well on mobile, as it is responsive, clear, and easy to follow on mobile
+              devices.
+            </li>
+            <li>
+              The minimalist design makes navigation simple and allows for quick access to the necessary information
+              Page load times are fast
+            </li>
+            <li>When bursary applications are open, a prominent CTA button like “Apply Now” is displayed.</li>
+            <li>The information on the website is well structured with a logical flow.</li>
+          </ul>
+
+          <h4>Cons</h4>
+          <ul class="design-list">
+            <li>
+              Only “Home” in the navigation bar turns blue when active. The other pages do not indicate the current page
+              you are on. This inconsistency makes navigation less intuitive.
+            </li>
+            <li>
+              When creating an application, saving options are available. However, when trying to go back and edit
+              certain sections in the application, some information is saved while other details that are typed out are
+              lost, which means the information has to be retyped.
+            </li>
+            <li>
+              The pop-up that appears when going onto the login page can be confusing, as there is no close button, and
+              it took me a minute to realise that you need to scroll within the pop-up as there was no direction given.
+            </li>
+          </ul>
+
+          <div class="website-example">
+            <h3 class="website-name">Vodacom website- Pros & Cons</h3>
+            <a href="https://www.vodacom.co.za/"
+              ><img class="web-image" src="images/Vodacom.png" alt="Vodacom Website"
+            /></a>
+          </div>
+          <h4>Pros</h4>
+          <ul class="design-list">
+            <li>The navigation is well organised</li>
+            <li>
+              There is a consistent iconography that uses a gradient style, making them aesthetically pleasing and
+              recognisable
+            </li>
+            <li>The website effectively makes use of CTA buttons like “Buy Now.”</li>
+            <li>The website has a minimalist design that improves readability and makes it easy to follow</li>
+          </ul>
+          <h4>Cons</h4>
+          <ul class="design-list">
+            <li>The navigation bar does indicate what page you are on.</li>
+          </ul>
+
+          <div class="website-example">
+            <h3 class="website-name">Takealot website- Pros & Cons</h3>
+            <a href="https://www.takealot.com/"
+              ><img class="web-image" src="images/TakeAlot_Screenshot.png" alt="TakeAlot Website"
+            /></a>
+          </div>
+          <h4>Pros</h4>
+          <ul class="design-list">
+            <li>The load times are fast despite the cluttered pages</li>
+            <li>
+              Deals and discounts that are displayed like "ALOT FOR LESS—Save up to 55%" could allow for quick decision
+              when shopping
+            </li>
+            <li>Offers a wide range of options, like shopping by brand, category, department, and promotions</li>
+          </ul>
+          <h4>Cons</h4>
+          <ul class="design-list">
+            <li>
+              The home page is cluttered. Navigation feels overwhelming, as there are multiple promotional banners
+              across the page
+            </li>
+            <li>
+              Multiple CTA buttons, like shop now, are in different colours across different areas of the page this does
+              creates some visual noise
+            </li>
+            <li>
+              The lack of whitespace due to the overload of information makes it hard to focus on one thing at a time.
+            </li>
+            <li>The department dropdown has a long list, and it is not actually collapsable.</li>
+            <li>Too many advertisements across the page are distracting from the core shopping experience</li>
+          </ul>
+        </div>
+      </article>
+    </main>
+    <footer>&copy;2025 Mfundo Dhlamini. All Rights Reserved</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/DrawSVGPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
