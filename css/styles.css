@@ -11,6 +11,7 @@
   --grey-bg: rgb(224, 224, 224);
   --typography-colour: rgba(44, 44, 44, 1);
   --primary-font: "Roboto", sans-serif;
+  --nav-font: 'Cera Round Pro DEMO', sans-serif;
   --secondary-font: "Raleway", sans-serif;
   --tertiary-font: "Open Sans", sans-serif;
   --shine-degree: 120deg;
@@ -24,6 +25,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -34,7 +36,7 @@ html {
 
 body {
   background-color: var(--background-colour);
-  scroll-behavior: smooth;
+  
   font-family: var(--primary-font), var(--secondary-font), var(--tertiary-font);
   font-size: 1.6rem;
   line-height: 2rem;
@@ -242,15 +244,40 @@ h1 {
   line-height: 4rem;
 }
 
+.back-to-top {
+  display: none;
+  position: fixed;
+  width: 4rem;
+  height: 5rem;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 0;
+  border: none;
+  outline: none;
+  background-color: var(--product-card-bg);
+  color: var(--typography-colour);
+  cursor: pointer;
+  padding: 0;
+  border-radius: 50px;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.573);
+  font-size: 2rem;
+  transition: all 0.5s ease 0s;
+}
+
+.back-to-top:hover {
+  background-color: var(--accent-colour);
+  color: var(--background-colour);
+}
+
 @media screen and (min-width: 600px) {
 }
 
 @media screen and (min-width: 768px) {
-  header{
+  header {
     border: 0;
   }
 
-  .overlay{
+  .overlay {
     display: none;
   }
   .menu-toggle {
@@ -286,6 +313,8 @@ h1 {
 
   .navlinks li a {
     line-height: 100%;
+    text-transform: capitalize;
+    font-family: var(--nav-font), var(--primary-font);
   }
 
   .nav-logo {
@@ -299,7 +328,7 @@ h1 {
 }
 
 @media screen and (min-width: 1024px) {
-  .overlay{
+  .overlay {
     display: none;
   }
 }

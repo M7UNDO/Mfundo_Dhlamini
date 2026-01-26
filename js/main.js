@@ -59,10 +59,10 @@ function loadNav() {
           <ul class="navlinks">
             <li><a href="../index.html">Home</a></li>
             <li><a href="../blogs/index.html">Blogs</a></li>
-            <li><a href="">Essays</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Design</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="../essays/index.html">Essays</a></li>
+            <li><a href="../portfolio/index.html">Portfolio</a></li>
+            <li><a href="../design/index.html">Design</a></li>
+            <li><a href="../about/index.html">About</a></li>
           </ul>
         </div>
         <div class="socials-container">
@@ -222,4 +222,20 @@ function scrollFunction() {
   } else {
     backToTopBtn.style.display = "none";
   }
+}
+
+//Scroll to top of the page
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+if (backToTopBtn) {
+  backToTopBtn.addEventListener("click", () => {
+    topFunction();
+  });
 }
