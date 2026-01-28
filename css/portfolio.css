@@ -1,0 +1,38 @@
+.game-list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.game{
+    width: 100%;
+    height: auto;
+    background-color: blue;
+}
+
+.purchase_popup_btn{
+    background-color: red;
+}
+
+
+@media screen and (min-width: 768px) {
+  .games-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    background-color: blue;
+    overflow-x: hidden;
+    gap: 2rem;
+  }
+
+  .portfolio-section {
+  }
+
+  .game {
+    height: 100%;
+    width: 100%;
+  }
+}
