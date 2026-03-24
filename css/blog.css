@@ -90,6 +90,7 @@ h2 {
   }
 
   .blog-left {
+    font-family: var(--secondary-font);
     display: block;
     width: 30rem;
     height: 75vh;
